@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Detail Cleaning Services</title>
+    <style>
+        :root {
+            --primary-color: #007bff; 
+            --bg-color: #f4f7f9;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+            --form-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header h1 { font-size: 1.7rem; margin-bottom: 8px; color: #1e272e; }
+        .header p { font-size: 1rem; color: #57606f; margin-bottom: 20px; }
+
+        /* Review Section */
+        .testimonial-box {
+            background: #fff;
+            border-left: 4px solid #ff9f43;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        /* Thumbtack Widget Wrapper */
+        .widget-wrapper {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #e1e8ed;
+        }
+
+        /* Buttons and Links */
+        .button-group { display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px; }
+        .btn {
+            display: flex; align-items: center; justify-content: center;
+            padding: 14px; border-radius: 10px; text-decoration: none;
+            font-weight: 700; border: 1px solid #dfe6e9;
+            background: var(--card-bg); color: var(--text-color);
+            transition: 0.2s;
+        }
+        .btn:hover { background-color: #f1f2f6; transform: translateY(-2px); }
+        .btn-brand { border-left: 5px solid var(--primary-color); }
+
+        /* Quote Form Styling */
+        .quote-form {
+            background: var(--form-bg);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: left;
+            margin-top: 30px;
+        }
+        .quote-form h2 { font-size: 1.3rem; margin-top: 0; color: var(--primary-color); text-align: center; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 0.9rem; }
+        input, textarea {
+            width: 100%; padding: 12px; border: 1px solid #ddd;
+            border-radius: 8px; box-sizing: border-box; font-size: 1rem;
+        }
+        .submit-btn {
+            width: 100%; padding: 15px; background: var(--primary-color);
+            color: white; border: none; border-radius: 8px;
+            font-weight: bold; font-size: 1.1rem; cursor: pointer;
+        }
+        .submit-btn:hover { background: #0056b3; }
+
+        .payment-info { margin-top: 30px; font-size: 0.85rem; color: #7f8c8d; }
+        footer { margin-top: 40px; font-size: 0.75rem; color: #bdc3c7; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Express Detail Cleaning Services</h1>
+            <p>Your Satisfaction, Our Priority</p>
+        </div>
+
+        <div class="widget-wrapper">
+            <div id="tt-review-widget-star">
+                <img src="https://cdn.thumbtackstatic.com/fe-assets-web/media/logos/thumbtack/wordmark.svg" alt="Thumbtack" style="width:100px;" />
+                <a target="_blank" href="https://www.thumbtack.com/az/nogales/house-cleaning/express-detail-cleaning-services/service/352066147039821846" style="display:block; margin: 5px 0; color:#2d3436; text-decoration:none; font-weight:bold;">
+                    4.9 Stars (52 Reviews)
+                </a>
+                <script src="https://www.thumbtack.com/profile/widgets/scripts/?service_pk=352066147039821846&widget_id=review&type=star"></script>
+            </div>
+        </div>
+
+        <div class="testimonial-box">
+            "20 minutes in I instantly felt a huge sense of relief as I watched my place transform from what initially felt unbearable to a palace." <br>
+            <small><strong>— Jae N.</strong></small>
+        </div>
+
+        <div class="button-group">
+            <a href="https://www.facebook.com/ExpressDetailCleaning/" class="btn btn-brand">📘 Facebook</a>
+            <a href="https://www.yelp.com/biz/express-detail-cleaning-omaha" class="btn btn-brand">🔴 Yelp</a>
+            <a href="https://nextdoor.com/profile/013GNXzL2Thwq7xgh" class="btn btn-brand">🏡 Nextdoor</a>
+            <a href="tel:4023171644" class="btn btn-brand">📞 Call (402) 317-1644</a>
+            <a href="tel:5202229144" class="btn btn-brand">📞 Call (520) 222-9144</a>
+        </div>
+
+        <hr>
+
+        <div class="quote-form">
+            <h2>Request a Pricing Quote</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Service Address</label>
+                    <input type="text" name="address" required placeholder="123 Street, City, State">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="_replyto" required placeholder="yourname@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" required placeholder="(555) 555-5555">
+                </div>
+                <div class="form-group">
+                    <label>Upload Images of Area</label>
+                    <input type="file" name="upload" accept="image/*" multiple>
+                    <small style="color:#666;">You can select multiple photos.</small>
+                </div>
+                <div class="form-group">
+                    <label>Details / Special Requests</label>
+                    <textarea name="message" rows="3" placeholder="Tell us about your cleaning needs..."></textarea>
+                </div>
+                <input type="hidden" name="_cc" value="yesli0688@gmail.com,exdc2019@outlook.com">
+                
+                <button type="submit" class="submit-btn">Get My Free Quote</button>
+            </form>
+        </div>
+
+        <div class="payment-info">
+            <strong>Accepted Payments:</strong><br>
+            Cash, PayPal, Venmo, Zelle, & Cash App
+        </div>
+
+        <footer>
+            &copy; 2026 Express Detail Cleaning Services. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
